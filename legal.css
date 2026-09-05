@@ -1,0 +1,155 @@
+body.legal-page {
+  background: var(--paper);
+}
+
+.legal-header {
+  border-bottom: 1px solid var(--line);
+}
+
+.legal-nav {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.legal-nav a:hover,
+.legal-nav a[aria-current="page"] {
+  color: var(--ink);
+}
+
+.legal-shell {
+  width: min(900px, calc(100% - 48px));
+  margin: 0 auto;
+  padding: 78px 0 110px;
+}
+
+.legal-intro {
+  max-width: 720px;
+  margin-bottom: 54px;
+}
+
+.legal-intro h1 {
+  font-size: clamp(48px, 7vw, 76px);
+}
+
+.legal-updated {
+  margin: 22px 0 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.legal-content {
+  padding: 42px 50px 54px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--white);
+  box-shadow: 0 18px 45px rgba(17, 24, 39, 0.06);
+}
+
+.legal-content h2 {
+  margin: 36px 0 12px;
+  font-size: 28px;
+  letter-spacing: -0.05em;
+}
+
+.legal-content h2:first-child {
+  margin-top: 0;
+}
+
+.legal-content h3 {
+  margin: 26px 0 8px;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 19px;
+  letter-spacing: -0.03em;
+}
+
+.legal-content p,
+.legal-content li {
+  color: #4f5b70;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.legal-content p {
+  margin: 0 0 16px;
+}
+
+.legal-content ul {
+  margin: 10px 0 20px;
+  padding-left: 23px;
+}
+
+.legal-content a {
+  color: var(--blue);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.legal-callout {
+  margin: 24px 0 28px;
+  padding: 18px 20px;
+  border-left: 4px solid var(--blue);
+  border-radius: 8px;
+  background: #f1f3ff;
+}
+
+.legal-callout p {
+  margin: 0;
+  color: var(--ink);
+}
+
+.legal-footer {
+  flex-wrap: wrap;
+}
+
+.footer-links {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer-links a:hover {
+  color: var(--ink);
+}
+
+@media (max-width: 700px) {
+  .legal-nav {
+    gap: 11px;
+    font-size: 12px;
+  }
+
+  .legal-shell {
+    padding: 54px 0 80px;
+  }
+
+  .legal-content {
+    padding: 30px 24px 36px;
+  }
+}
+
+@media (max-width: 520px) {
+  .legal-header {
+    align-items: flex-start;
+    gap: 16px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+
+  .legal-nav {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .legal-content p,
+  .legal-content li {
+    font-size: 15px;
+  }
+
+  .legal-footer {
+    gap: 12px 18px;
+  }
+}
